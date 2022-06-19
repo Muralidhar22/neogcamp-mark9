@@ -1,38 +1,50 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
+/* Banner: Film reel animation */
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .film-reel {
+    animation: film-reel-spin infinite 8s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.small-reel {
+  margin: 20px 0;
+  margin-left: 1rem;
+  ;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes film-reel-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.movie-item {
+  padding: .75rem 0 .75rem 2rem;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transform: skew(-20deg);
+  margin: 1rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.movie-item * {
+  transform: skew(20deg);
+}
+
+hr {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+span {
+  font-weight: 100;
+  font-size: 1.25rem;
 }
