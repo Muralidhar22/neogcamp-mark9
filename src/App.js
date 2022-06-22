@@ -6,7 +6,7 @@ import filmReel from "./film-reel.svg";
 
   export default function App() {
     const API_KEY = "k_s2kfw23k";
-    const [section, setSection] = React.useState("InTheaters");
+    const [section, setSection] = React.useState("Top250TVs");
     const menu = [
       { name: "Top TV's", keyWord: "Top250TVs"},
       { name: "Top Movies", keyWord: "Top250Movies"},
